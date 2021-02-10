@@ -1,0 +1,107 @@
+.header-content{
+   /* border:2px solid red; */
+   height:200px;
+   width:auto;
+   padding:5px;
+   display: flex;
+   flex-direction: row;
+   justify-content:space-around;
+   align-items: center;
+}
+ .address-content{
+   /* border:2px solid black; */
+   height:100%;
+   width:30%;
+   margin-top:40px;
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+ }
+
+ .heading{
+    /* border:2px solid black; */
+    width:75%;
+    padding:0;
+}
+.heading h3,h1{
+    margin:0px;
+}
+
+.address{
+    /* border:2px solid purple; */
+    height:80%;
+    width:auto;
+    padding:10px;
+}
+.address p{
+    line-height: 50%;
+}
+.address h4{
+    line-height:40%;
+    font-weight: 900;
+}
+
+.content-invoice{
+    /* border:2px solid red; */
+    height:100%;
+    width:30%;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.invoice-name h4{
+   margin:0;
+}
+
+.date p{
+  line-height: 50%;
+}
+
+.main-content{
+    /* border:2px solid purple; */
+    width:80%;
+    margin:2% 10%;
+}
+.para{
+    text-align: justify;
+}
+.itemlist{
+    height:30%;
+    width:80%;
+    margin-left:10%;
+    padding:5px;
+    /* background-color: white; */
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.itemli{
+    border:2px solid grey;
+}
+
+.footer{
+    height:80%;
+    width:80%;
+    /* border:2px solid green; */
+    margin:2%;
+    text-align: center;
+}
+@media only screen and (max-width:768px){
+    .address p{
+        line-height: 48%;
+    }
+    .address-content{
+        width:45%;
+    }
+    .address{
+        width:100%;
+    }
+    .content-invoice{
+        width:40%;
+    }
+}

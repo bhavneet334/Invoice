@@ -1,0 +1,43 @@
+<h3>{{viewTitle}}</h3>
+
+ <form action="/item" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{item._id}}">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>S.NO</label>
+            <input type="number" class="form-control" name="Sno" value="{{item.Sno}}">
+            <div class="text-danger">
+                {{item.SnoError}}</div>
+        </div>
+        <div class="form-group col-md-8">
+            <label> Item Description </label>
+            <input type="text" class="form-control" name="itemDescription" placeholder="Item Decsription" value="{{item.itemDescription}}">
+            <div class="text-danger">
+                {{item.itemDescriptionError}}</div>
+        </div>
+    </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label> Unit Price</label>
+                <input type="number" class="form-control" name="unitPrice" placeholder="UnitPrice" value="{{item.unitPrice}}">
+                <div class="text-danger">
+                {{item.unitPriceError}}</div>
+            </div>
+            <div class="form-group col-md-4">
+                <label> Quantity </label>
+                <input type="number" class="form-control" name="quantity" placeholder="Quantity" value="{{item.quantity}}">
+                <div class="text-danger">
+                {{item.quantityError}}</div>
+            </div>
+            <div class="form-group col-md-4">
+                <label> Total Price </label>
+                <input type="number" class="form-control" name="totalPrice" placeholder="TotalPrice" value="{{item.totalPrice}}">
+                <div class="text-danger">
+                {{item.totalPriceError}}</div>
+            </div>
+     </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+            <a class="btn btn-secondary" href="/item/list"><i class="fa fa-list-alt"></i> View All</a>
+        </div>
+</form>

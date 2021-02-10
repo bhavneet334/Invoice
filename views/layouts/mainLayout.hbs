@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> NodeJS , ExpressJS , MongoDB and Crud </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+         <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+
+    <body >
+        <div class="header-content">
+            <div class="address-content">
+                 <div class="heading">
+                    <h3>Raven Technolabs </h3>
+                 </div>
+                 <div class="address">
+                    <p>Office-802, Rajhans Tower,</p>
+                    <p>B/H Shreaysh Trade Center</p>
+                    <p>Varachha Road, Surat-395006</p>
+                    <br>
+                    <p>+91 8469536960 </p>
+                    <p>raventechnolabs@gmail.com</p>
+                 </div>
+            </div>
+
+            <div class="content-invoice">
+                  <div class="invoice-heading">
+                      <h1> INVOICE </h1>
+                 </div>
+                  <div class="invoice-details">
+                    <div class="date">
+                         <p><span id="datetime"></span></p>
+                         <p> Invoice No</p>
+                    </div>
+                    <div class="invoice-name">
+                        <h4> Att :Himal Jani </h4>
+                        <h4> Saurashtra Express </h4>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <hr>
+        <div class="main-content">
+            <div class="para">
+                <p>
+                    Dear. Ms Himal Jani , <br><br>
+                    PLease find below a cost breakdown for the recent work completed. PLease make payment at your earliest convenience,
+                    and do not hesitate to contact me with any questions.
+                    <br><br>
+                    Many Thanks,<br>
+                    Raven Technolabs
+
+                </p>
+            </div>
+        </div>
+        <div class="bootstrap-iso">
+            <div class="row">
+                <div class="itemlist">
+                    <div class="itemli">
+                    {{{body}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="footer">
+                <p>
+                    Many thanks for your custom! I look forward to doing buisness with you again in due course. <br>
+                    <br>
+                    Payment terms : to be received withing ten days<br>
+                </p>
+        </div>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"-"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"-"+ (dt.getFullYear())
+        </script>
+    </body>
+</html>
